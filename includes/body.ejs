@@ -1,0 +1,75 @@
+
+
+<div ng-controller="controlsController">
+
+
+<div class="testclas divblauw lb">
+<h1 class="h1blauw">Controls</h1>
+    <ul class="testclasul">
+ 
+      <li ng-repeat="comp in infocomp.Component | filter:searchText">
+      <a class="collapsed" targets-zetten ng-bind="comp.Title">
+      </a>
+         <div pas-aan-gui>    
+    <div  class="pushdown">
+      <h3 ng-show="comp.Construtors.length" >Constructors</h3>
+      <ul>
+      <li ng-repeat="cotr in comp.Construtors | filter:searchText" ><b ng-bind="cotr.constr"></b>&#160;{{cotr.info}}</i></li>
+      </ul>
+      <h3 ng-show="comp.Methoden.length > 0">Methoden</h3>
+      <ul>
+      <li ng-repeat="met in comp.Methoden | filter:searchText"><b ng-bind="met.constr"></b>&#160;{{met.info}}</li>
+    
+      </li>
+        </ul>
+              <h3 ng-show="comp.ItemEvents.length > 0">ItemEvents</h3>
+      <ul>
+      <li ng-repeat="event in comp.ItemEvents | filter:searchText"><b ng-bind="event"></b></li>
+    
+      </li>
+        </ul>
+		<h3 ng-show="comp.Extra.length > 0">Extra</h3>
+            <ul>
+      <li ng-repeat="ex in comp.Extra | filter:searchText" ng-bind="ex"></li>
+    
+      </li>
+        </ul>
+        <div ng-bind-html="comp.Voorbeeld | to_trusted"></div>
+        </div>
+      </div>
+    </ul>
+    </div>
+  
+
+ 
+     <div class="testclas divgeelgroen">
+     <h1 class="h1geelgroen">GUI</h1>
+ <ul class="testclasul">
+
+ <li ng-repeat="GUIelement in layouts.GUI | filter:searchText" >
+ <a class="collapsed" targets-zetten ng-bind="GUIelement.layout"></a>
+<div pas-aan-gui>
+<div  class="pushdown">
+<h3>Constructors</h3>
+<ul>
+
+<li ng-repeat="const in GUIelement.layoutConst | filter:searchText" ><b ng-bind="const.desc"></b></li>
+</ul>
+
+<ul>
+<h3>Gebruik</h3>
+<li ng-repeat="gebruik in GUIelement.layoutGebruik" ><b ng-bind="gebruik"></b></li>
+</ul>
+<ul>
+<h3>Extra</h3>
+<li ng-repeat="extra in GUIelement.layoutExtra" ng-bind="extra"></li>
+</ul>
+<div ng-bind-html="GUIelement.voorbeeld | to_trusted"></div>
+</div>
+</div>
+ </li>
+ </ul>
+ </div>
+  </div>
+ 
+ 

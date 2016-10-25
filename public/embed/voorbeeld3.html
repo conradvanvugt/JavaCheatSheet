@@ -1,0 +1,30 @@
+
+	
+<html>
+<head>
+	<link href="../stylesheets/prism.css" rel="stylesheet" />
+    <script src="../js/prism.js"></script>
+</head>
+<body>
+<pre class="line-numbers"><code class="language-java">
+class paneel extends JPanel{ 
+	private JButton knop;
+	public paneel(){
+		knop = new JButton("kies een kleur");
+		add(knop);
+		knop.addActionHandler(new KnopHandler());
+		}
+	class knopHandler implements ActionListener{
+		public void actionPerformed(ActionEvent e){
+			Color bgColor = JColorChooser.ShowDialog
+			(null, "Kies een kleur", Color.Blue);
+			if(bgColor !=null) {
+				setBackground(bgColor);
+				}
+			}
+		}
+	}
+</code></pre>
+
+    </body>
+</html>

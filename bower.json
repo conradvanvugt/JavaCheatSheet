@@ -1,0 +1,8 @@
+{
+  "name": "jcsheet",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-bind-html-compile": "*",
+    "angular-animate": "^1.5.8"
+  }
+}

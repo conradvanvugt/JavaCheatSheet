@@ -1,0 +1,273 @@
+{
+  "Component": [
+    {
+      "Id": "0",
+      "Title": "JCheckBox",
+      "Construtors": [
+        "public JCheckBox()",
+        "public JCheckBox(String text)",
+        "public JCheckBox(Icon icon)",
+        "public JCheckBox(String string, Icon icon)",
+        "public JCheckBox(String text, boolean selected)",
+        "public JCheckBox(Icon icon, boolean selected)",
+        "public JCheckBox(String text, Icon icon, boolean selected)"
+      ],
+      "ConstructorsInfo": [
+        "",
+        "selectievak met tekst",
+        "selectievak met een afbeelding",
+        "selectievak met tekst en een afbeelding",
+        "selectievak met tekst en al geselecteerd",
+        "selectievak met een afbeelding en al geselecteerd",
+        "selectievak met tekst, een afbeelding en al geselecteerd"
+      ],
+      "Methoden": [
+        "public String getText()",
+        "public void setText(String text)",
+        "public boolean isSelected()",
+        "public void setSelected(boolean b)",
+        "public void setIcon(Icon defaultIcon)"
+      ],
+      "MethodenInfo": [
+        "geeft tekst van het selectievak terug",
+        "verandert de tekst van het selectievak",
+        "kijk of het selectievak geselecteerd is",
+        "selecteerd het selectievak met true deselecteerd het selectievak met false",
+        "verandert de foto van het selectievak"
+      ],
+      "ItemEvents": [
+        "ItemListener",
+        "public void itemStateChanged(ItemEvent e)",
+        "public void addItemListener(ItemListener l)"
+      ]
+    },
+    {
+      "Id": "1",
+      "Title": "JRadioButton",
+      "Construtors": [
+        "public JRadioButton()",
+        "public JRadioButton(String text)",
+        "public JRadioButton(Icon icon)",
+        "public JRadioButton(String string, Icon icon)",
+        "public JRadioButton(String text, boolean selected)",
+        "public JRadioButton(Icon icon, boolean selected)",
+        "public JRadioButton(String text, Icon icon, boolean selected)"
+      ],
+      "ConstructorsInfo": [
+        "",
+        "radiobutton met tekst",
+        "radiobutton met een afbeelding",
+        "radiobutton met tekst en een afbeelding",
+        "radiobutton met tekst en al geselecteerd",
+        "radiobutton met een afbeelding en al geselecteerd",
+        "radiobutton met tekst, een afbeelding en al geselecteerd"
+      ],
+      "Methoden": [
+        "public String getText()",
+        "public void setText(String text)",
+        "public boolean isSelected()",
+        "public void setSelected(boolean b)",
+        "public void setIcon(Icon defaultIcon)"
+      ],
+      "MethodenInfo": [
+        "geeft tekst van de radiobutton terug",
+        "verandert de tekst van de radiobutton",
+        "kijk of de radiobutton geselecteerd is",
+        "selecteerd de radiobutton met true deselecteerd de radiobutton met false",
+        "verandert de foto van de radiobutton"
+      ],
+      "ItemEvents": [
+        "ItemListener",
+        "public void itemStateChanged(ItemEvent e)",
+        "public void addItemListener(ItemListener l)"
+      ],
+      "Extra": [
+        "Om radiobuttons samen te groeperen moet er eerst een groep gemaakt worden dit gebeurt met ButtonGroup",
+        "<embed  src=\" ..\\embed\\voorbeeld1.html\"></embed>"
+      
+        ]
+    },
+    {
+      "Id": "3",
+      "Title": "JComboBox",
+      "Construtors": [
+        "public JComboBox()",
+        "public JComboBox(Object[] items)"
+      ],
+      "ConstructorsInfo": [
+        "",
+        "opgevulde dropdownlijst met array van elementen"
+      ],
+      "Methoden": [
+        "public void addItem(Object anObject)",
+        "public void insertItemAt(Object anObject, int index)",
+        "public void removeItemAt(int)",
+        "public Object getItemAt(int index)",
+        "public Object getSelectedIdex()",
+        "public Object getSelectedItem()"
+      ],
+      "MethodenInfo": [
+        "voegt een element toe aan de dropdownlijst",
+        "voegt element toe aan de dropdownlijst op een specifieke index",
+        "verwijdert een element van de dropdownlijst op een specifieke index",
+        "geeft element van dropdownlijst terug",
+        "geeft de index van het geselecteerde element terug",
+        "geeft het geselecteerde element terug"
+      ],
+      "ItemEvents": [
+        "ItemListener",
+        "public void itemStateChanged(ItemEvent e)",
+        "public void addItemListener(ItemListener l)"
+      ]
+    },
+    {
+      "Id": "4",
+      "Title": "JList",
+      "Construtors": [
+        "public JList()",
+        "public JList(Object[] listData)"
+      ],
+      "ConstructorsInfo": [
+        "",
+        "opgevulde keuzelijst met array van elementen"
+      ],
+      "Methoden": [
+        "public void clearSelection()",
+        "public int getSelectedIndex()",
+        "public int[] getSelectedIndices()",
+        "public Object getSelectedValue()",
+        "public Object[] getSelectedValues()",
+        "public void setVisibleRowCount(int visibleRowCount)"
+      ],
+      "MethodenInfo": [
+        "selectie van de keuzelijst leegmaken",
+        "geeft de eerst geselecteerde index terug",
+        "geeft de geselecteerde indexen terug in de vorm van een array van integers",
+        "geeft de waarde van het eerst geslecteerde element terug",
+        "geeft de waardes van alle geslecteerde elementen terug in de vorm van een array",
+        "bepaalt hoeveel rijen een JScrollPane toont"
+      ],
+      "ItemEvents": [
+        "ListSelectionListener",
+        "public void valueChanged(ListSelectionEvent e)",
+        "public void addListSelectionListener(ListSelectionListener l)"
+      ]
+    },
+    {
+      "Id": "5",
+      "Title": "JScrollPane",
+      "Construtors": [
+        "public JScrollPane(Component view)",
+        "public JScrollPane(Component view, int vsbPolicy, int hsbPolicy)"
+      ],
+      "ConstructorsInfo": [
+        "scrollbalken rond het opgegeven component plaatsen",
+        "scrollbalken rond het opgegeven component plaatsen en waarde scrollbalken ingeven"
+      ],
+      "Extra": [
+        "Mogelijke waarden vsbPolicy",
+        "ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED (default) verticale scrollbalk tonen wanneer het nodig is <br>ScrollPaneConsta.VERTICAL_SCROLLBAR_ALWAYS verticale scrollbalk altijd tonen<br>ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER verticale scrollbalk nooit tonen",
+        "mogelijke waarden hsbPolicy",
+        "ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED (default) horizontale scrollbalk tonen wanneer het nodig is <br>ScrollPaneConsta.HORIZONTAL_SCROLLBAR_ALWAYS horizontale scrollbalk altijd tonen<br>ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER horizontale scrollbalk nooit tonen"
+      ]
+    },
+    {
+      "Id": "6",
+      "Title": "JScrollBar",
+      "Construtors": [
+        "public JScrollBar(int orientation, int value, int extent, int min, int max) "
+      ],
+      "ConstructorsInfo": [
+        "schuifbalk met orientatie, beginwaarde, grote verschuiving, minimale en maximale waarde"
+      ],
+      "Methoden": [
+        "public int getValue()"
+      ],
+      "MethodenInfo": [
+        "geeft de waarde van de schuifbalk terug"
+      ],
+      "ItemEvents": [
+        "AdjustmentListener",
+        "public void adjustmentValueChanged(AdjustmentEvent e)",
+        "addAdjustmentListener(AdjustmentListener l)"
+      ],
+      "Extra": [
+        "mogelijke waarden orientatie",
+        "JScrollBar.HORIZONTAL schuifbalk horizontaal plaatsen<br>JScrollBar.VERTICAL schuifbalk vertikaal plaatsen"
+      ]
+    },
+    {
+      "Id": "7",
+      "Title": "JSlider",
+      "Construtors": [
+        "public JSlider(int orientation, int min, int max, int value) "
+      ],
+      "ConstructorsInfo": [
+        "slider met orientatie, minimale en maximale waarde en beginwaarde"
+      ],
+      "Methoden": [
+        "public void setMajorTickSpacing(int n)",
+        "public void setMinorTickSpacing(int n)",
+        "public void setPaintTicks(boolean b)",
+        "public void setPaintLabels(boolean)",
+        "public int getValue()"
+      ],
+      "MethodenInfo": [
+        "grote maatstreep tussenruimte instellen",
+        "kleine maatstreep tussenruimte instellen",
+        "als de waarde true is maatstrepen tekenen als het false is geen maatstrepen tekenen",
+        "als de waarde true is labels tekenen als het false is geen labels tekenen",
+        "geeft de waarde van de slider terug"
+      ],
+      "ItemEvents": [
+        "ChangeListener",
+        "public void stateChanged(ChangeEvent e)",
+        "public void addChangeListener(ChangeListener l)"
+      ],
+      "Extra": [
+        "mogelijke waarden orientatie",
+        "JSlider.HORIZONTAL slider horizontaal plaatsen<br>JSlider.VERTICAL slider vertikaal plaatsen"
+      ]
+    },
+    {
+      "Id": "8",
+      "Title": "JToolTip",
+      "Construtors": [
+        "public void setToolTipText(String text)"
+      ],
+      "ConstructorsInfo": [
+        "tooltip tekst instellen"
+      ],
+      "Extra": [
+        "Een tooltip kan niet opzichzelf bestaan, het moet aan een element gekoppeld zijn",
+        "voorbeeld:<embed  src=\" ..\\embed\\voorbeeld2.html\"></embed>"
+        
+      ]
+    },
+    {
+      "Id": "9",
+      "Title": "JToolBar",
+      "Construtors": [
+        "public JToolBar()",
+        "public JToolBar(int orientation)"
+      ],
+      "ConstructorsInfo": [
+        "",
+        "Toolbar met een orientatie plaatsen"
+      ],
+      "Extra": [
+        "mogelijke waarden orientatie",
+        "JToolbar.HORIZONTAL toolbar horizontaal plaatsen<br>JToolbar.VERTICAL toolbar vertikaal plaatsen",
+        "toolbar moet in een BorderLayout staan maar mag geen CENTER zijn"
+      ]
+    },
+    {
+      "Id": "10",
+      "Title": "JColorChooser",
+      "Extra": [
+        "een kleurenkiezer wordt niet op het paneel geplaatst",
+        "oproep methode JColorChooser.showDialog(Component component, String title, Color initialColor)"
+      ]
+    }
+  ]
+}

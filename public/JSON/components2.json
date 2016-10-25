@@ -1,0 +1,199 @@
+{
+  "Component": [
+    {
+      "Id": "0",
+      "Title": "JCheckBox",
+      "Construtors": [
+    	  {"constr":"public JCheckBox()", "info": ""},
+    	  {"constr":"public JCheckBox(String text)", "info": "selectievak met tekst"},
+    		  {"constr":"public JCheckBox(Icon icon)", "info": "selectievak met een afbeelding"},
+    		  {"constr":"public JCheckBox(String string, Icon icon)", "info": "selectievak met tekst en een afbeelding"},
+    			  {"constr":"public JCheckBox(String text, boolean selected)", "info": "selectievak met tekst en al geselecteerd"},
+    			  {"constr": "public JCheckBox(Icon icon, boolean selected)", "info": "selectievak met een afbeelding en al geselecteerd"},
+    				  {"constr": "public JCheckBox(String text, Icon icon, boolean selected)", "info": "selectievak met tekst, een afbeelding en al geselecteerd"}
+      ],
+      "Methoden": [
+    	  {"constr":"public String getText()", "info":"geeft tekst van het selectievak terug"},
+    		  {"constr":"public void setText(String text)", "info":"verandert de tekst van het selectievak"},
+    		  {"constr":"public boolean isSelected()", "info":"kijk of het selectievak geselecteerd is"},
+    			  {"constr":"public void setSelected(boolean b)", "info":"selecteerd het selectievak met true deselecteerd het selectievak met false"},
+    			  {"constr":"public void setIcon(Icon defaultIcon)", "info":"verandert de foto van het selectievak"}
+      ],
+      "ItemEvents": [
+        "ItemListener",
+        "public void itemStateChanged(ItemEvent e)",
+        "public void addItemListener(ItemListener l)"
+      ]
+    },
+    {
+      "Id": "1",
+      "Title": "JRadioButton",
+      "Construtors": [
+    	  {"constr":"public JRadioButton()","info":""},
+    		  {"constr":"public JRadioButton(String text)","info":"radiobutton met tekst"},
+    		  {"constr":"public JRadioButton(Icon icon)","info":  "radiobutton met een afbeelding"},
+    			  {"constr":"public JRadioButton(String string, Icon icon)","info":"radiobutton met tekst en een afbeelding"},
+    			  {"constr":"public JRadioButton(String text, boolean selected)","info":"radiobutton met tekst en al geselecteerd"},
+    				  {"constr":"public JRadioButton(Icon icon, boolean selected)","info":"radiobutton met een afbeelding en al geselecteerd"},
+    				  {"constr":"public JRadioButton(String text, Icon icon, boolean selected)","info":"radiobutton met tekst, een afbeelding en al geselecteerd"}
+      ],
+      "Methoden": [
+    	  {"constr":"public String getText()","info":"geeft tekst van de radiobutton terug"},
+    		  {"constr":"public void setText(String text)","info":"verandert de tekst van de radiobutton"},
+    		  {"constr":"public boolean isSelected()","info": "kijk of de radiobutton geselecteerd is"},
+    			  {"constr":"public void setSelected(boolean b)", "info": "selecteerd de radiobutton met true deselecteerd de radiobutton met false"},
+    			  {"constr":"public void setIcon(Icon defaultIcon)","info": "verandert de foto van de radiobutton"}
+      ],
+
+      "ItemEvents": [
+        "ItemListener",
+        "public void itemStateChanged(ItemEvent e)",
+        "public void addItemListener(ItemListener l)"
+      ],
+      "Extra": [
+        "Om radiobuttons samen te groeperen moet er eerst een groep gemaakt worden dit gebeurt met ButtonGroup"
+        
+      
+        ],
+        "Voorbeeld":"<embed  src=\" ..\\embed\\voorbeeld1.html\"></embed>"
+    },
+    {
+      "Id": "3",
+      "Title": "JComboBox",
+      "Construtors": [
+    	  {"constr": "public JComboBox()","info":""},
+    		  {"constr":"public JComboBox(Object[] items)","info":"opgevulde dropdownlijst met array van elementen"}
+      ],
+      "Methoden": [
+    	  {"constr": "public void addItem(Object anObject)","info": "voegt een element toe aan de dropdownlijst"},
+    		  {"constr":"public void insertItemAt(Object anObject, int index)","info":"voegt element toe aan de dropdownlijst op een specifieke index"},
+    		  {"constr":"public void removeItemAt(int)","info":"verwijdert een element van de dropdownlijst op een specifieke index"},
+    			  {"constr":"public Object getItemAt(int index)","info": "geeft element van dropdownlijst terug"},
+    			  {"constr":"public Object getSelectedIdex()","info": "geeft de index van het geselecteerde element terug"},
+    				  {"constr":"public Object getSelectedItem()","info": "geeft het geselecteerde element terug"}
+      ],
+
+      "ItemEvents": [
+        "ItemListener",
+        "public void itemStateChanged(ItemEvent e)",
+        "public void addItemListener(ItemListener l)"
+      ]
+    },
+    {
+      "Id": "4",
+      "Title": "JList",
+      "Construtors": [
+    	  {"constr": "public JList()","info": ""},
+    		  {"constr": "public JList(Object[] listData)","info":  "opgevulde keuzelijst met array van elementen"}
+      ],
+
+      "Methoden": [
+    	  {"constr": "public void clearSelection()","info":  "selectie van de keuzelijst leegmaken"},
+    		  {"constr": "public int getSelectedIndex()","info": "geeft de eerst geselecteerde index terug"},
+    		  {"constr": "public int[] getSelectedIndices()","info":"geeft de geselecteerde indexen terug in de vorm van een array van integers"},
+    			  {"constr": "public Object getSelectedValue()","info": "geeft de waarde van het eerst geslecteerde element terug"},
+    			  {"constr": "public Object[] getSelectedValues()","info": "geeft de waardes van alle geslecteerde elementen terug in de vorm van een array"},
+    				  {"constr": "public void setVisibleRowCount(int visibleRowCount)","info": "bepaalt hoeveel rijen een JScrollPane toont"}
+      ],
+
+      "ItemEvents": [
+        "ListSelectionListener",
+        "public void valueChanged(ListSelectionEvent e)",
+        "public void addListSelectionListener(ListSelectionListener l)"
+      ]
+    },
+    {
+      "Id": "5",
+      "Title": "JScrollPane",
+      "Construtors": [
+    	  {"constr":  "public JScrollPane(Component view)","info": "scrollbalken rond het opgegeven component plaatsen"},
+    		  {"constr":  "public JScrollPane(Component view, int vsbPolicy, int hsbPolicy)","info":"scrollbalken rond het opgegeven component plaatsen en waarde scrollbalken ingeven"}
+      ],
+      "Extra": [
+        "Mogelijke waarden vsbPolicy",
+        "ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED (default) verticale scrollbalk tonen wanneer het nodig is","ScrollPaneConsta.VERTICAL_SCROLLBAR_ALWAYS verticale scrollbalk altijd tonen", "ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER verticale scrollbalk nooit tonen",
+        "mogelijke waarden hsbPolicy",
+        "ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED (default) horizontale scrollbalk tonen wanneer het nodig is ", "ScrollPaneConsta.HORIZONTAL_SCROLLBAR_ALWAYS horizontale scrollbalk altijd tonen", "ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER horizontale scrollbalk nooit tonen"
+      ]
+    },
+    {
+      "Id": "6",
+      "Title": "JScrollBar",
+      "Construtors": [
+    	  {"constr":"public JScrollBar(int orientation, int value, int extent, int min, int max) ","info":"schuifbalk met orientatie, beginwaarde, grote verschuiving, minimale en maximale waarde"}
+      ],
+      "Methoden": [
+    	  {"constr": "public int getValue()", "info" :  "geeft de waarde van de schuifbalk terug"}
+      ],
+      "ItemEvents": [
+        "AdjustmentListener",
+        "public void adjustmentValueChanged(AdjustmentEvent e)",
+        "addAdjustmentListener(AdjustmentListener l)"
+      ],
+      "Extra": [
+        "mogelijke waarden orientatie",
+        "JScrollBar.HORIZONTAL schuifbalk horizontaal plaatsen", "JScrollBar.VERTICAL schuifbalk vertikaal plaatsen"
+      ]
+    },
+    {
+      "Id": "7",
+      "Title": "JSlider",
+      "Construtors": [
+    	  {"constr":  "public JSlider(int orientation, int min, int max, int value) ", "info" : "slider met orientatie, minimale en maximale waarde en beginwaarde"}
+      ],
+
+      "Methoden": [
+    	  {"constr": "public void setMajorTickSpacing(int n)", "info" :"grote maatstreep tussenruimte instellen"},
+    		  {"constr": "public void setMinorTickSpacing(int n)", "info" :        "kleine maatstreep tussenruimte instellen"},
+    		  {"constr":  "public void setPaintTicks(boolean b)", "info" :  "als de waarde true is maatstrepen tekenen als het false is geen maatstrepen tekenen"},
+    			  {"constr":  "public void setPaintLabels(boolean)", "info":"als de waarde true is labels tekenen als het false is geen labels tekenen"},
+    			  {"constr":   "public int getValue()", "info": "geeft de waarde van de slider terug"}
+      ],
+      "ItemEvents": [
+        "ChangeListener",
+        "public void stateChanged(ChangeEvent e)",
+        "public void addChangeListener(ChangeListener l)"
+      ],
+      "Extra": [
+        "mogelijke waarden orientatie",
+        "JSlider.HORIZONTAL slider horizontaal plaatsen","JSlider.VERTICAL slider vertikaal plaatsen"
+      ]
+    },
+    {
+      "Id": "8",
+      "Title": "JToolTip",
+      "Construtors": [
+    	  {"constr":  "public void setToolTipText(String text)","info":   "tooltip tekst instellen"}
+      ],
+      "Extra": [
+        "Een tooltip kan niet opzichzelf bestaan, het moet aan een element gekoppeld zijn"
+       
+        
+      ],
+      "Voorbeeld":"<embed  src=\" ..\\embed\\voorbeeld2.html\"></embed>"
+    },
+    {
+      "Id": "9",
+      "Title": "JToolBar",
+      "Construtors": [
+    	  {"constr":  "public JToolBar()", "info": "" },
+    		  {"constr":  "public JToolBar(int orientation)", "info": "Toolbar met een orientatie plaatsen"}
+      ],
+
+      "Extra": [
+        "mogelijke waarden orientatie",
+        "JToolbar.HORIZONTAL toolbar horizontaal plaatsen","JToolbar.VERTICAL toolbar vertikaal plaatsen",
+        "toolbar moet in een BorderLayout staan maar mag geen CENTER zijn"
+      ]
+    },
+    {
+      "Id": "10",
+      "Title": "JColorChooser",
+      "Extra": [
+        "een kleurenkiezer wordt niet op het paneel geplaatst",
+        "oproep methode JColorChooser.showDialog(Component component, String title, Color initialColor)"
+      ],
+    "Voorbeeld":"<embed src=\"\\embed\\voorbeeld3.html\">"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<link href="../stylesheets/prism.css" rel="stylesheet" />
+    <script src="../js/prism.js"></script>
+</head>
+<body>
+<pre class="line-numbers"><code class="language-java">
+class paneel extends JPanel{ 
+	private JPanel paneel1,paneel2,paneel3;
+	public paneel(){
+		setLayout(new GridLayout(1,3));
+		paneel1= new JPanel();
+		paneel2= new JPanel();
+		paneel3= new JPanel();
+		border titelrand = BorderFactory.createTitledBorder("Titel");
+		border groefrand = BorderFactory.createEtchedBorder();
+		border samengesteld = BorderFactory.createCompoundBorder(
+			BorderFactory.createEmptyBorder(10,10,10,10)
+			, BorderFactory.createEtchedBorder());
+		paneel1.setBorder(titelrand);
+		paneel2.setBorder(groefrand);
+		paneel3.setBorder(samengesteld);
+		add(paneel1);
+		add(paneel2);
+		add(paneel3);
+		}
+	}
+</code></pre>
+
+    </body>
+</html>

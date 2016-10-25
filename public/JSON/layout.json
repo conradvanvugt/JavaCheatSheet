@@ -1,0 +1,92 @@
+{
+  "GUI": [
+    {
+      "layout":
+        "FlowLayout",
+        "layoutConst":[
+        	{"id":1, "desc":"public FlowLayout()"},
+        	{"id":2,"desc":"public FlowLayout(int align)"},
+        	{"id":3,"desc":"public FlowLayout(int align, int hgap, int vgap)"}
+      ],
+      "layoutGebruik":["setLayout(new FlowLayout(align, hgap , vgap));"],
+        "layoutExtra":[
+        "FlowLayout.LEFT layout links uitlijnen",
+        "FlowLayout.CENTER layout in centreren",
+        "FlowLayout.RIGHT layout rechts uitlijnen",
+        "hgap horizontale ruimte tussen componenten",
+        "vgap verticale ruimte tussen componenten"
+      ],
+      "voorbeeld": "<embed src=\"\\embed\\voorbeeldflow.html\">"
+    },
+    {
+      "layout":
+        "BorderLayout",
+        "layoutConst":[
+        	{"id":1, "desc":"public BorderLayout()"},
+        	{"id":2,"desc":"public BorderLayout(int hgap, int vgap)"},
+        {"id":3,"desc":"public FlowLayout(int align, int hgap, int vgap)"}
+      ],
+      "layoutGebruik": ["setLayout(new BorderLayout( hgap , vgap));",
+      "add(component, BorderLayout.locatie);"
+
+      ],
+        "layoutExtra":[
+        "BorderLayout.NORTH layout aan de bovenkant van het venster plaatsen",
+        "BorderLayout.SOUTH layout aan de onderkant van het venster plaatsen",
+        "BorderLayout.EAST layout rechts in het venster plaatsen",
+        "BorderLayout.WEST layout aan de linkerkant van het venster plaatsen",
+        "BorderLayout.CENTER layout in het centrum plaatsen",
+        "BorderLayout kan met minder als 5 componenten werken"
+      ],
+      "voorbeeld": "<embed src=\"\\embed\\voorbeeldborder.html\">"
+    },
+        {
+      "layout":
+        "GridLayout",
+        "layoutConst":[
+        	{"id":1,"desc":"public GridLayout(int rows, int cols)"},
+        		{"id":2,"desc":"public GridLayout(int rows, int cols, int hgap, int vgap)"}
+
+      ],
+      "layoutGebruik": ["setLayout(new GridLayout( rows , cols));"
+
+      ],
+        "layoutExtra":[
+        "opvullen van lege plaatsen kan met lege labels gebeuren add(new JLabel(\" \"));"
+      ],
+      "voorbeeld": "<embed src=\"\\embed\\voorbeeldgrid.html\">"
+    },
+        {
+      "layout":
+        "BoxLayout",
+        "layoutConst":[
+        	{"id":1,"desc":"public BoxLayout()"},
+        		{"id":2,"desc": "public BoxLayout(container,BoxLayout.X_AXIS)"},
+        		{"id":3,"desc":"public BoxLayout(container,BoxLayout.Y_AXIS)"}
+      ],
+      "layoutGebruik":["setLayout(new BoxLayout(container, AXIS));"],
+        "layoutExtra":[
+        "container kan als this ingevuld worden",
+        "struts, glue en rigid area kunnen toegevoegd worden om componenten te uit te lijnen"
+      ],
+      "voorbeeld": "<embed src=\"\\embed\\voorbeeldbox.html\">"
+    },
+    {
+        "layout":
+          "Borders",
+          "layoutConst":[
+          	{"id":1,"desc":"public BorderFactory.createLineBorder()"},
+          		{"id":2,"desc": "public BorderFactory.createBevelBorder()"},
+          		{"id":3,"desc":"public BorderFactory.createEtchedBorder()"},
+          		{"id":4,"desc":"public BorderFactory.createMatteBorder()"},
+          		{"id":5,"desc":"public BorderFactory.createEmptyBorder()"},
+          		{"id":6,"desc":"public BorderFactory.createTitledBorder()"},
+          		{"id":7,"desc":"public BorderFactory.createCompoundBorder()"}
+        ],
+        "layoutGebruik":["component.setBorder(BorderFactory.createEtchedBorder());"],
+        "layoutExtra":["empty borders kunnen voor layout gebruikt worden"],
+        "voorbeeld": "<embed src=\"\\embed\\voorbeeldborders.html\">"
+      }
+  ]
+}
+        

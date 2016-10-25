@@ -1,0 +1,19 @@
+@media ( min-width : 768px) {
+	#headerstyle-brand {
+		margin-left: 100px;
+	}
+	#headerstyle-search-fullwidth {
+		width: 100%;
+	}
+	#headerstyle-search {
+		width: 40vw;
+	}
+}
+@media ( max-width : 768px) {
+	#headerstyle-search {
+		width: 100vw;
+	}
+}
+#headerstyle-brand a{
+	padding-top:0px;
+}
